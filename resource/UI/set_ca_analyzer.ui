@@ -330,10 +330,27 @@
     </hint>
    </hints>
   </connection>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>open_file()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>268</x>
+     <y>430</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>305</x>
+     <y>425</y>
+    </hint>
+   </hints>
+  </connection>
  </connections>
  <slots>
   <slot>select_all_channel()</slot>
   <slot>manual_by_files()</slot>
   <slot>specified_by_laser()</slot>
+  <slot>open_file()</slot>
  </slots>
 </ui>

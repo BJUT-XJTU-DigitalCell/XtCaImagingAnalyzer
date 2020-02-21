@@ -38,6 +38,18 @@ class SetAnalyzer(QWidget, Ui_Form):
         self.checkBox_10.setEnabled(enable)
         self.checkBox_10.setChecked(checked)
 
+    def open_file(self):
+        file_dialog = QFileDialog(self)
+        file_dialog.setAcceptMode(QFileDialog.AcceptOpen)
+        file_dialog.setFileMode(QFileDialog.ExistingFiles)
+        # file_dialog.setNameFilter("Images(*.tiff)")
+        file_dialog.setViewMode(QFileDialog.Detail)
+        file_dialog.filesSelected.connect(self.execute_analyzer)
+        file_dialog.open()
+
+    def execute_analyzer(self, files):
+        print(files)
+
 
 if __name__ == '__main__':
     import sys

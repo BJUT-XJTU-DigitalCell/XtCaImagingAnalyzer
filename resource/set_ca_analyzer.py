@@ -164,6 +164,7 @@ class Ui_Form(object):
         self.radioButton_11.toggled['bool'].connect(Form.select_all_channel)
         self.radioButton_12.toggled['bool'].connect(Form.manual_by_files)
         self.radioButton_13.toggled['bool'].connect(Form.specified_by_laser)
+        self.pushButton.clicked.connect(Form.open_file)
         QtCore.QMetaObject.connectSlotsByName(Form)
 
     def retranslateUi(self, Form):
