@@ -165,6 +165,17 @@ class Ui_Form(object):
         self.radioButton_12.toggled['bool'].connect(Form.manual_by_files)
         self.radioButton_13.toggled['bool'].connect(Form.specified_by_laser)
         self.pushButton.clicked.connect(Form.open_file)
+        self.radioButton_9.clicked.connect(Form.select_analyze_mode)
+        self.radioButton_10.clicked.connect(Form.select_analyze_mode)
+        self.tabWidget.currentChanged['int'].connect(Form.select_data_type)
+        self.radioButton.clicked.connect(Form.select_signal_type)
+        self.radioButton_2.clicked.connect(Form.select_signal_type)
+        self.radioButton_3.clicked.connect(Form.select_signal_type)
+        self.radioButton_4.clicked.connect(Form.select_signal_type)
+        self.radioButton_5.clicked.connect(Form.select_signal_type)
+        self.radioButton_6.clicked.connect(Form.select_signal_type)
+        self.radioButton_7.clicked.connect(Form.select_signal_type)
+        self.radioButton_8.clicked.connect(Form.select_signal_type)
         QtCore.QMetaObject.connectSlotsByName(Form)
 
     def retranslateUi(self, Form):
