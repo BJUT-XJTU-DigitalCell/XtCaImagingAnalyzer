@@ -7,18 +7,24 @@ class SetAnalyzer(QWidget, Ui_Form):
         super().__init__()
         self.setupUi(self)
         self.data_type = "XT"
-        self.signal_type = None
+        self.mxt_signal_type = None
+        self.xt_signal_type = None
+        self.analyze_mode = None
 
     def select_data_type(self, current_no):
-        print(self.sender().tabText(current_no))
         self.data_type = self.sender().tabText(current_no)
-        self.signal_type = None
         print(self.data_type)
-        print(self.signal_type)
+        print("mxt_signal_type", self.mxt_signal_type)
+        print("xt_signal_type", self.xt_signal_type)
 
-    def select_signal_type(self):
-        self.signal_type = self.sender().text()
-        print(self.signal_type)
+    def select_xt_signal_type(self):
+        self.xt_signal_type = self.sender().text()
+        print(self.xt_signal_type)
+        print(self.data_type)
+
+    def select_mxt_signal_type(self):
+        self.mxt_signal_type = self.sender().text()
+        print(self.mxt_signal_type)
         print(self.data_type)
 
     def select_all_channel(self):
@@ -53,7 +59,9 @@ class SetAnalyzer(QWidget, Ui_Form):
         self.checkBox_10.setChecked(checked)
 
     def select_analyze_mode(self):
+        self.analyze_mode = self.sender().text()
         print(type(self.sender().text()))
+        print(self.sender().text())
 
     def open_file(self):
         file_dialog = QFileDialog(self)

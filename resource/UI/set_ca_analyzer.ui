@@ -398,15 +398,15 @@
    <sender>radioButton</sender>
    <signal>clicked()</signal>
    <receiver>Form</receiver>
-   <slot>select_signal_type()</slot>
+   <slot>select_xt_signal_type()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>115</x>
      <y>73</y>
     </hint>
     <hint type="destinationlabel">
-     <x>4</x>
-     <y>130</y>
+     <x>3</x>
+     <y>124</y>
     </hint>
    </hints>
   </connection>
@@ -414,7 +414,7 @@
    <sender>radioButton_2</sender>
    <signal>clicked()</signal>
    <receiver>Form</receiver>
-   <slot>select_signal_type()</slot>
+   <slot>select_xt_signal_type()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>40</x>
@@ -430,7 +430,7 @@
    <sender>radioButton_3</sender>
    <signal>clicked()</signal>
    <receiver>Form</receiver>
-   <slot>select_signal_type()</slot>
+   <slot>select_xt_signal_type()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>68</x>
@@ -446,7 +446,7 @@
    <sender>radioButton_4</sender>
    <signal>clicked()</signal>
    <receiver>Form</receiver>
-   <slot>select_signal_type()</slot>
+   <slot>select_xt_signal_type()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>29</x>
@@ -462,11 +462,11 @@
    <sender>radioButton_5</sender>
    <signal>clicked()</signal>
    <receiver>Form</receiver>
-   <slot>select_signal_type()</slot>
+   <slot>select_mxt_signal_type()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>28</x>
-     <y>68</y>
+     <x>36</x>
+     <y>65</y>
     </hint>
     <hint type="destinationlabel">
      <x>1</x>
@@ -478,11 +478,11 @@
    <sender>radioButton_6</sender>
    <signal>clicked()</signal>
    <receiver>Form</receiver>
-   <slot>select_signal_type()</slot>
+   <slot>select_mxt_signal_type()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>33</x>
-     <y>125</y>
+     <x>41</x>
+     <y>115</y>
     </hint>
     <hint type="destinationlabel">
      <x>-1</x>
@@ -494,11 +494,11 @@
    <sender>radioButton_7</sender>
    <signal>clicked()</signal>
    <receiver>Form</receiver>
-   <slot>select_signal_type()</slot>
+   <slot>select_mxt_signal_type()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>17</x>
-     <y>175</y>
+     <x>25</x>
+     <y>167</y>
     </hint>
     <hint type="destinationlabel">
      <x>0</x>
@@ -510,11 +510,11 @@
    <sender>radioButton_8</sender>
    <signal>clicked()</signal>
    <receiver>Form</receiver>
-   <slot>select_signal_type()</slot>
+   <slot>select_mxt_signal_type()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>28</x>
-     <y>227</y>
+     <x>36</x>
+     <y>217</y>
     </hint>
     <hint type="destinationlabel">
      <x>-2</x>
@@ -530,6 +530,7 @@
   <slot>open_file()</slot>
   <slot>select_analyze_mode()</slot>
   <slot>select_data_type()</slot>
-  <slot>select_signal_type()</slot>
+  <slot>select_xt_signal_type()</slot>
+  <slot>select_mxt_signal_type()</slot>
  </slots>
 </ui>
