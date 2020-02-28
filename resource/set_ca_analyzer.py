@@ -176,6 +176,16 @@ class Ui_Form(object):
         self.radioButton_6.clicked.connect(Form.select_mxt_signal_type)
         self.radioButton_7.clicked.connect(Form.select_mxt_signal_type)
         self.radioButton_8.clicked.connect(Form.select_mxt_signal_type)
+        self.checkBox.toggled['bool'].connect(Form.select_channel)
+        self.checkBox_2.toggled['bool'].connect(Form.select_channel)
+        self.checkBox_4.toggled['bool'].connect(Form.select_channel)
+        self.checkBox_3.toggled['bool'].connect(Form.select_channel)
+        self.checkBox_5.toggled['bool'].connect(Form.select_channel)
+        self.checkBox_6.toggled['bool'].connect(Form.select_channel)
+        self.checkBox_7.toggled['bool'].connect(Form.select_channel)
+        self.checkBox_8.toggled['bool'].connect(Form.select_channel)
+        self.checkBox_9.toggled['bool'].connect(Form.select_channel)
+        self.checkBox_10.toggled['bool'].connect(Form.select_channel)
         QtCore.QMetaObject.connectSlotsByName(Form)
 
     def retranslateUi(self, Form):

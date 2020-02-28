@@ -10,6 +10,7 @@ class SetAnalyzer(QWidget, Ui_Form):
         self.mxt_signal_type = None
         self.xt_signal_type = None
         self.analyze_mode = None
+        self.channels = []
 
     def select_data_type(self, current_no):
         self.data_type = self.sender().tabText(current_no)
@@ -62,6 +63,14 @@ class SetAnalyzer(QWidget, Ui_Form):
         self.analyze_mode = self.sender().text()
         print(type(self.sender().text()))
         print(self.sender().text())
+
+    def select_channel(self, checked):
+        if checked:
+            self.channels.append(self.sender().text())
+            print(self.channels)
+        else:
+            self.channels.remove(self.sender().text())
+            print(self.channels)
 
     def open_file(self):
         file_dialog = QFileDialog(self)
