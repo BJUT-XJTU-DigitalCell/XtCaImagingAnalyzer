@@ -3,10 +3,16 @@ from resource.set_ca_analyzer import Ui_Form
 
 
 class SetAnalyzer(QWidget, Ui_Form):
+    open_analyzer_signal = pyqtSignal(list, int, int, str, str, str, list)
+
     def __init__(self):
         super().__init__()
         self.setupUi(self)
+        self.files = []
+        self.files_num = 0
+        self.file_no = 0
         self.data_type = "XT"
+        self.signal_type = None
         self.mxt_signal_type = None
         self.xt_signal_type = None
         self.analyze_mode = None
@@ -72,6 +78,14 @@ class SetAnalyzer(QWidget, Ui_Form):
             self.channels.remove(self.sender().text())
             print(self.channels)
 
+    def execute_analyzer(self, files):
+        self.files = files
+        self.files_num = len(files)
+        print(self.files)
+        print(self.files_num)
+        print(self.file_no)
+        self.open_analyzer_signal.emit(self.files, self.files_num, self.file_no, self.data_type, self.signal_type, self.analyze_mode, self.channels)
+
     def open_file(self):
         file_dialog = QFileDialog(self)
         file_dialog.setAcceptMode(QFileDialog.AcceptOpen)
@@ -79,10 +93,11 @@ class SetAnalyzer(QWidget, Ui_Form):
         # file_dialog.setNameFilter("Images(*.tiff)")
         file_dialog.setViewMode(QFileDialog.Detail)
 
-        def execute_analyzer(files):
-            print(files)
+        # def execute_analyzer(files):
+        #     print(files)
+        #     self.open_analyzer_signal.emit()
 
-        file_dialog.filesSelected.connect(execute_analyzer)
+        file_dialog.filesSelected.connect(self.execute_analyzer)
         file_dialog.open()
 
 
