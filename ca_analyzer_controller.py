@@ -11,15 +11,9 @@ if __name__ == "__main__":
 
 
     def open_analyzer(files, files_num, file_no, data_type, signal_type, analyze_mode, channels):
-        print(files)
-        print(files_num)
-        print(file_no)
-        print(data_type)
-        print(signal_type)
-        print(analyze_mode)
-        print(channels)
         analyzer.show()
         set_analyzer.hide()
+        analyzer.xt_analyzer(files, files_num, file_no, data_type, signal_type, analyze_mode, channels)
 
 
     set_analyzer.open_analyzer_signal.connect(open_analyzer)

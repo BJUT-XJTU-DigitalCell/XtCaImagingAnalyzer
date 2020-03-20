@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1206</width>
+    <width>1260</width>
     <height>600</height>
    </rect>
   </property>
@@ -20,19 +20,19 @@
       <property name="minimumSize">
        <size>
         <width>0</width>
-        <height>50</height>
+        <height>52</height>
        </size>
       </property>
       <property name="maximumSize">
        <size>
         <width>16777215</width>
-        <height>50</height>
+        <height>52</height>
        </size>
       </property>
-      <property name="styleSheet">
-       <string notr="true">background-color: rgb(170, 170, 255);</string>
-      </property>
-      <layout class="QGridLayout" name="gridLayout">
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <property name="spacing">
+        <number>0</number>
+       </property>
        <property name="leftMargin">
         <number>6</number>
        </property>
@@ -45,370 +45,559 @@
        <property name="bottomMargin">
         <number>6</number>
        </property>
-       <item row="0" column="0" rowspan="2">
+       <item>
         <widget class="QWidget" name="widget_3" native="true">
-         <property name="minimumSize">
-          <size>
-           <width>0</width>
-           <height>38</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>16777215</width>
-           <height>38</height>
-          </size>
-         </property>
-         <layout class="QHBoxLayout" name="horizontalLayout">
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <property name="spacing">
+           <number>2</number>
+          </property>
           <property name="leftMargin">
-           <number>8</number>
+           <number>0</number>
           </property>
           <property name="topMargin">
-           <number>8</number>
+           <number>0</number>
           </property>
           <property name="rightMargin">
-           <number>8</number>
+           <number>0</number>
           </property>
           <property name="bottomMargin">
-           <number>8</number>
+           <number>0</number>
           </property>
           <item>
            <widget class="QComboBox" name="comboBox">
             <property name="minimumSize">
              <size>
+              <width>200</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>200</width>
+              <height>40</height>
+             </size>
+            </property>
+            <item>
+             <property name="text">
+              <string>Ca2+ sparks</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Ca2+ blinks</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Ca2+ sparks/blinks</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Ca2+ translents</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item>
+           <widget class="QToolButton" name="toolButton">
+            <property name="minimumSize">
+             <size>
+              <width>40</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>40</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-image: url(:/analyzer/images/prev_file.bmp);
+background-repeat: no-repeat;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QToolButton" name="toolButton_2">
+            <property name="minimumSize">
+             <size>
+              <width>40</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>40</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-image: url(:/analyzer/images/next_file.bmp);</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="comboBox_2">
+            <property name="minimumSize">
+             <size>
               <width>100</width>
-              <height>22</height>
+              <height>40</height>
              </size>
             </property>
             <property name="maximumSize">
              <size>
               <width>100</width>
-              <height>22</height>
+              <height>40</height>
              </size>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton">
+           <widget class="QComboBox" name="comboBox_3">
             <property name="minimumSize">
              <size>
-              <width>22</width>
-              <height>22</height>
+              <width>100</width>
+              <height>40</height>
              </size>
             </property>
             <property name="maximumSize">
              <size>
-              <width>22</width>
-              <height>22</height>
+              <width>100</width>
+              <height>40</height>
              </size>
             </property>
+            <item>
+             <property name="text">
+              <string>Multi</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Red</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Green</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Blue</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Yellow</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Purple</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Cyan</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>White</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item>
+           <widget class="QToolButton" name="toolButton_3">
+            <property name="minimumSize">
+             <size>
+              <width>40</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>40</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-image: url(:/analyzer/images/raw_image.bmp);</string>
+            </property>
             <property name="text">
-             <string>PushButton</string>
+             <string/>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton_2">
+           <widget class="QToolButton" name="toolButton_4">
             <property name="minimumSize">
              <size>
-              <width>22</width>
-              <height>22</height>
+              <width>40</width>
+              <height>40</height>
              </size>
             </property>
             <property name="maximumSize">
              <size>
-              <width>22</width>
-              <height>22</height>
+              <width>40</width>
+              <height>40</height>
              </size>
             </property>
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Actual Size&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-image: url(:/analyzer/images/actual_size.bmp);</string>
+            </property>
             <property name="text">
-             <string>PushButton</string>
+             <string/>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QComboBox" name="comboBox_2"/>
-          </item>
-          <item>
-           <widget class="QComboBox" name="comboBox_3"/>
-          </item>
-          <item>
-           <widget class="QPushButton" name="pushButton_3">
+           <widget class="QToolButton" name="toolButton_5">
             <property name="minimumSize">
              <size>
-              <width>22</width>
-              <height>22</height>
+              <width>40</width>
+              <height>40</height>
              </size>
             </property>
             <property name="maximumSize">
              <size>
-              <width>22</width>
-              <height>22</height>
+              <width>40</width>
+              <height>40</height>
              </size>
             </property>
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Analyze&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-image: url(:/analyzer/images/play.bmp);</string>
+            </property>
             <property name="text">
-             <string>PushButton</string>
+             <string/>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton_4">
+           <widget class="QToolButton" name="toolButton_6">
             <property name="minimumSize">
              <size>
-              <width>22</width>
-              <height>22</height>
+              <width>40</width>
+              <height>40</height>
              </size>
             </property>
             <property name="maximumSize">
              <size>
-              <width>22</width>
-              <height>22</height>
+              <width>40</width>
+              <height>40</height>
              </size>
             </property>
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Set Configration&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-image: url(:/analyzer/images/option.bmp);</string>
+            </property>
             <property name="text">
-             <string>PushButton</string>
+             <string/>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton_5">
+           <widget class="QToolButton" name="toolButton_7">
             <property name="minimumSize">
              <size>
-              <width>22</width>
-              <height>22</height>
+              <width>40</width>
+              <height>40</height>
              </size>
             </property>
             <property name="maximumSize">
              <size>
-              <width>22</width>
-              <height>22</height>
+              <width>40</width>
+              <height>40</height>
              </size>
             </property>
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Crop Image&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-image: url(:/analyzer/images/crop.bmp);</string>
+            </property>
             <property name="text">
-             <string>PushButton</string>
+             <string/>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton_6">
+           <widget class="QToolButton" name="toolButton_8">
             <property name="minimumSize">
              <size>
-              <width>22</width>
-              <height>22</height>
+              <width>40</width>
+              <height>40</height>
              </size>
             </property>
             <property name="maximumSize">
              <size>
-              <width>22</width>
-              <height>22</height>
+              <width>40</width>
+              <height>40</height>
              </size>
             </property>
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Show Or Hide ROI&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-image: url(:/analyzer/images/show_roi.bmp);</string>
+            </property>
             <property name="text">
-             <string>PushButton</string>
+             <string/>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton_7">
+           <widget class="QToolButton" name="toolButton_9">
             <property name="minimumSize">
              <size>
-              <width>22</width>
-              <height>22</height>
+              <width>40</width>
+              <height>40</height>
              </size>
             </property>
             <property name="maximumSize">
              <size>
-              <width>22</width>
-              <height>22</height>
+              <width>40</width>
+              <height>40</height>
              </size>
             </property>
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Show Or Hide ROI#&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-image: url(:/analyzer/images/show_label.bmp);</string>
+            </property>
             <property name="text">
-             <string>PushButton</string>
+             <string/>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton_8">
+           <widget class="QToolButton" name="toolButton_10">
             <property name="minimumSize">
              <size>
-              <width>22</width>
-              <height>22</height>
+              <width>40</width>
+              <height>40</height>
              </size>
             </property>
             <property name="maximumSize">
              <size>
-              <width>22</width>
-              <height>22</height>
+              <width>40</width>
+              <height>40</height>
              </size>
             </property>
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Delete Current ROI&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-image: url(:/analyzer/images/delete.bmp);</string>
+            </property>
             <property name="text">
-             <string>PushButton</string>
+             <string/>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton_10">
+           <widget class="QToolButton" name="toolButton_11">
             <property name="minimumSize">
              <size>
-              <width>22</width>
-              <height>22</height>
+              <width>40</width>
+              <height>40</height>
              </size>
             </property>
             <property name="maximumSize">
              <size>
-              <width>22</width>
-              <height>22</height>
+              <width>40</width>
+              <height>40</height>
              </size>
             </property>
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Delete All ROIs&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-image: url(:/analyzer/images/delete_all.bmp);</string>
+            </property>
             <property name="text">
-             <string>PushButton</string>
+             <string/>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton_9">
+           <widget class="QToolButton" name="toolButton_12">
             <property name="minimumSize">
              <size>
-              <width>22</width>
-              <height>22</height>
+              <width>40</width>
+              <height>40</height>
              </size>
             </property>
             <property name="maximumSize">
              <size>
-              <width>22</width>
-              <height>22</height>
+              <width>40</width>
+              <height>40</height>
              </size>
             </property>
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Plot ROI Traces&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-image: url(:/analyzer/images/display_roi.bmp);</string>
+            </property>
             <property name="text">
-             <string>PushButton</string>
+             <string/>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton_11">
+           <widget class="QToolButton" name="toolButton_13">
             <property name="minimumSize">
              <size>
-              <width>22</width>
-              <height>22</height>
+              <width>40</width>
+              <height>40</height>
              </size>
             </property>
             <property name="maximumSize">
              <size>
-              <width>22</width>
-              <height>22</height>
+              <width>40</width>
+              <height>40</height>
              </size>
             </property>
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Export Results&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-image: url(:/analyzer/images/export_roi.bmp);</string>
+            </property>
             <property name="text">
-             <string>PushButton</string>
+             <string/>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton_12">
+           <widget class="QToolButton" name="toolButton_14">
             <property name="minimumSize">
              <size>
-              <width>22</width>
-              <height>22</height>
+              <width>40</width>
+              <height>40</height>
              </size>
             </property>
             <property name="maximumSize">
              <size>
-              <width>22</width>
-              <height>22</height>
+              <width>40</width>
+              <height>40</height>
              </size>
             </property>
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Export Time Traces&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-image: url(:/analyzer/images/extract_xt.bmp);</string>
+            </property>
             <property name="text">
-             <string>PushButton</string>
+             <string/>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton_13">
+           <widget class="QToolButton" name="toolButton_15">
             <property name="minimumSize">
              <size>
-              <width>22</width>
-              <height>22</height>
+              <width>40</width>
+              <height>40</height>
              </size>
             </property>
             <property name="maximumSize">
              <size>
-              <width>22</width>
-              <height>22</height>
+              <width>40</width>
+              <height>40</height>
              </size>
+            </property>
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;File Information&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-image: url(:/analyzer/images/info.bmp);</string>
             </property>
             <property name="text">
-             <string>PushButton</string>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="QPushButton" name="pushButton_15">
-            <property name="minimumSize">
-             <size>
-              <width>22</width>
-              <height>22</height>
-             </size>
-            </property>
-            <property name="maximumSize">
-             <size>
-              <width>22</width>
-              <height>22</height>
-             </size>
-            </property>
-            <property name="text">
-             <string>PushButton</string>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="QPushButton" name="pushButton_14">
-            <property name="minimumSize">
-             <size>
-              <width>22</width>
-              <height>22</height>
-             </size>
-            </property>
-            <property name="maximumSize">
-             <size>
-              <width>22</width>
-              <height>22</height>
-             </size>
-            </property>
-            <property name="text">
-             <string>PushButton</string>
+             <string/>
             </property>
            </widget>
           </item>
          </layout>
         </widget>
        </item>
-       <item row="0" column="1">
-        <widget class="QLabel" name="label">
-         <property name="text">
-          <string>TextLabel</string>
-         </property>
-        </widget>
-       </item>
-       <item row="0" column="2" rowspan="2">
-        <widget class="QWidget" name="widget_4" native="true"/>
-       </item>
-       <item row="1" column="1">
-        <widget class="QScrollBar" name="horizontalScrollBar">
-         <property name="minimumSize">
-          <size>
-           <width>100</width>
-           <height>25</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>100</width>
-           <height>25</height>
-          </size>
-         </property>
-         <property name="orientation">
-          <enum>Qt::Horizontal</enum>
-         </property>
+       <item>
+        <widget class="QWidget" name="widget_4" native="true">
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <property name="spacing">
+           <number>6</number>
+          </property>
+          <property name="leftMargin">
+           <number>2</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="label">
+            <property name="minimumSize">
+             <size>
+              <width>200</width>
+              <height>12</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>200</width>
+              <height>12</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>TextLabel</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QScrollBar" name="horizontalScrollBar">
+            <property name="minimumSize">
+             <size>
+              <width>200</width>
+              <height>22</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>200</width>
+              <height>22</height>
+             </size>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
+         </layout>
         </widget>
        </item>
       </layout>
@@ -416,9 +605,26 @@
     </item>
     <item>
      <widget class="QWidget" name="widget_2" native="true">
-      <property name="styleSheet">
-       <string notr="true">background-color: rgb(0, 170, 255);</string>
-      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <property name="spacing">
+        <number>4</number>
+       </property>
+       <property name="leftMargin">
+        <number>6</number>
+       </property>
+       <property name="topMargin">
+        <number>6</number>
+       </property>
+       <property name="rightMargin">
+        <number>6</number>
+       </property>
+       <property name="bottomMargin">
+        <number>6</number>
+       </property>
+       <item>
+        <widget class="QGraphicsView" name="graphicsView"/>
+       </item>
+      </layout>
      </widget>
     </item>
    </layout>
@@ -429,7 +635,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1206</width>
+     <width>1260</width>
      <height>18</height>
     </rect>
    </property>
@@ -451,6 +657,8 @@
    </property>
   </action>
  </widget>
- <resources/>
+ <resources>
+  <include location="../images.qrc"/>
+ </resources>
  <connections/>
 </ui>

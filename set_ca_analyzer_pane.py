@@ -5,8 +5,8 @@ from resource.set_ca_analyzer import Ui_Form
 class SetAnalyzer(QWidget, Ui_Form):
     open_analyzer_signal = pyqtSignal(list, int, int, str, str, str, list)
 
-    def __init__(self):
-        super().__init__()
+    def __init__(self, parent=None, *args, **kwargs):
+        super().__init__(parent, *args, **kwargs)
         self.setupUi(self)
         self.files = []
         self.files_num = 0
