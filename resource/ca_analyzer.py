@@ -210,6 +210,7 @@ class Ui_MainWindow(object):
         self.actionOpen.setObjectName("actionOpen")
 
         self.retranslateUi(MainWindow)
+        self.comboBox_3.currentIndexChanged['int'].connect(MainWindow.change_channel_color)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
     def retranslateUi(self, MainWindow):

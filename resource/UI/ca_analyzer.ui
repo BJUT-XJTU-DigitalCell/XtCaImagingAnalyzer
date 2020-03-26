@@ -660,5 +660,25 @@ background-repeat: no-repeat;</string>
  <resources>
   <include location="../images.qrc"/>
  </resources>
- <connections/>
+ <connections>
+  <connection>
+   <sender>comboBox_3</sender>
+   <signal>currentIndexChanged(int)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>change_channel_color()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>492</x>
+     <y>66</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>5</x>
+     <y>29</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>change_channel_color()</slot>
+ </slots>
 </ui>
